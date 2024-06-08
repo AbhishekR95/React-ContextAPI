@@ -13,7 +13,7 @@ const Header = () => {
           <Link to={"/React-ContextAPI"}>
             <li>Home</li>
           </Link>
-          <Link to={"/category"}>
+          <Link to={"/React-ContextAPI"}>
             <li>By Category</li>
           </Link>
           <Link to={"/cart"}>

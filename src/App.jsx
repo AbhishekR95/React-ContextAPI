@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/React-ContextAPI" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/category" element={<Category />} />
+        <Route path="/React-ContextAPI/" element={<Category />} />
       </Routes>
     </>
   );
