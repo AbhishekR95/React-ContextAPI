@@ -1,22 +1,19 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./Header";
-import Home from "./Home";
-import Cart from "./Cart";
-import Context from "./Context";
+import Header from "./components/Header";
+import Home from "./Pages/Home";
+import Cart from "./Pages/Cart";
+import Category from "./Pages/Category";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Context>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
-        </Context>
-      </BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/category" element={<Category />} />
+      </Routes>
     </>
   );
 }

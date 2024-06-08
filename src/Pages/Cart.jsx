@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
-import SingleProduct from "./SingleProduct";
-import { CartContext } from "./Context";
+import SingleProducts from "../components/SingleProducts";
+import { CartContext } from "../Context/Context";
 
 const Cart = () => {
   const { cart } = useContext(CartContext);
@@ -11,13 +11,11 @@ const Cart = () => {
   }, [cart]);
   return (
     <>
-      <div>
-        <h2>Total: {total}</h2>
-      </div>{" "}
+      <h3 style={{ textAlign: "center" }}>Total: ${total}</h3>
       <div className="productContainer">
-        {cart.map((prod) => {
-          return <SingleProduct key={prod.id} prod={prod} />;
-        })}
+        {cart.map((prod) => (
+          <SingleProducts key={prod.id} prod={prod} />
+        ))}
       </div>
     </>
   );

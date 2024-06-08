@@ -4,17 +4,17 @@
 
 .list {
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
   background-color: black;
   color: aliceblue;
-  height: 60px;
+  height: 40px;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 .productContainer {
@@ -25,19 +25,17 @@ a {
 
 .products {
   display: flex;
-  width: 25%;
+  width: 20%;
   flex-direction: column;
-  margin: 20px;
-  padding: 6px;
+  margin: 15px;
+  padding: 25px;
   border: 1px solid black;
 }
 
 .desc {
   display: flex;
-  justify-content: space-around;
-  margin: 10px;
-}
-
-button {
-  height: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
 }

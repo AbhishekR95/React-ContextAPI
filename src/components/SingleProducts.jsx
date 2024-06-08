@@ -1,16 +1,17 @@
 import React, { useContext } from "react";
-import { CartContext } from "./Context";
-
-const SingleProduct = ({ prod }) => {
+import { CartContext } from "../Context/Context";
+const SingleProducts = ({ prod }) => {
   const { cart, setCart } = useContext(CartContext);
   return (
     <>
       <div className="products">
         <img src={prod.image} alt="" />
+
         <div className="desc">
-          <span>{prod.name}</span>
-          <span> ${prod.price.substring(0, 5)}</span>
+          <span>{prod.title}</span>
+          <span>{prod.price}</span>
         </div>
+
         {cart.includes(prod) ? (
           <button
             className="add remove"
@@ -27,7 +28,7 @@ const SingleProduct = ({ prod }) => {
               setCart([...cart, prod]);
             }}
           >
-            Add to cart
+            Add to Cart
           </button>
         )}
       </div>
@@ -35,4 +36,4 @@ const SingleProduct = ({ prod }) => {
   );
 };
 
-export default SingleProduct;
+export default SingleProducts;
