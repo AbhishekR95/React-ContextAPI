@@ -10,7 +10,7 @@ const Header = () => {
       <div className="header">
         <h1>React Shopping cart</h1>
         <ul className="list">
-          <Link to={"/"}>
+          <Link to={"/React-ContextAPI"}>
             <li>Home</li>
           </Link>
           <Link to={"/category"}>

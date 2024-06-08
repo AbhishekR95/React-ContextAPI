@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/React-ContextAPI" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/category" element={<Category />} />
       </Routes>
